@@ -1,0 +1,72 @@
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <title>音楽スタジオ料金シミュレーター</title>
+  
+  <meta name="description" content="簡単にスタジオ料金が計算できるツールです。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+</head>
+
+<body>
+    <header>
+        <img class="character-1" src="9973016.jpg" alt="キャラクター">
+        <div class="header-text">
+        <h1>音楽スタジオ<br class="sp-br">料金シミュレーター</h1>
+        <p>利用時間を入力して、<br class="sp-br">お支払い金額を計算しましょう。</p>
+        </div>
+        <img class="character-2" src="4200_2_09.jpg" alt="キャラクター">
+    </header>
+    
+    <main>
+
+        <div class="main-top">
+            <div class="calculator">
+                <label for="studio">スタジオを選択:</label>
+                <select id="studio">
+                    <option value="1500">Aスタジオ (1500円/時間)</option>
+                    <option value="2000">Bスタジオ (2000円/時間)</option>
+                    <option value="5500">スペシャルスタジオ (5500円/時間)</option>
+                </select>
+
+                <label for="hours">利用時間 (時間):</label>
+                <input type="number" id="hours" min="1" value="1">
+
+                <label for="mic"><br class="sp-br">マイクの数:</label>
+                
+                <input type="number" id="mic" min="0" value="0">
+                <p class="note">※マイクは1台500円で追加されます。</p>
+
+                <p>合計金額: <span id="total">0</span> 円</p>
+            </div>
+
+        </div>
+
+        <div class="studio-main-description">
+                <div class="studio-main-description-title">
+                    <h2>スタジオの概要</h2>
+        </div>
+            <p>スタジオの概要と設備について説明します。</p>
+        </div>
+        <div class="gallery">
+            <img class="foto" src="26513328_s.jpg">
+            <p class="studio-description">Aスタジオ概要：快適な音質と設備で、<br class="sp-br">最高の録音体験を提供します。<br class="sp-br">（1500円/時間）<br>ギターアンプ、ベースアンプ、ドラムの設備があります。</p>
+            <img class="foto" src="26120080_s.jpg">
+            <p class="studio-description">Bスタジオ概要：高品質な録音環境で、<br class="sp-br">プロフェッショナルな音楽制作を実現します。<br class="sp-br">（2000円/時間）<br>Aスタジオの設備＋ピアノ、キーボード、<br class="sp-br">エレクトリックギターの設備があります。</p>
+            <img class="foto" src="30777066_s.jpg">
+            <p class="studio-description">スペシャルスタジオ概要：特別な設備とサービスで、<br class="sp-br">最高の録音体験を提供します。<br class="sp-br">（5500円/時間）<br class="sp-br">特別な設備とサービスが提供されます。</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 音楽スタジオ料金シミュレーター. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
