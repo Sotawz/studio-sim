@@ -11,6 +11,13 @@ function calculate() {
   let micCount = Number(micInput.value); // マイクの数
   let micPrice = micCount * 500; // マイク代 (数に応じて計算)
 
+  if(hours<1 && micCount <0){
+    totalDisplay.textContent = "利用時間、マイクの数を<br>正しく入力してください";
+  }return;
+  else if(hours>24 && micCount>5){
+    totalDisplay.textContent = "利用時間は24時間以内、マイクの数は5つ以内で<br>入力してください";
+  }return;
+
   //if文で時間の上限チェック
     if (hours < 1) {
       totalDisplay.textContent = "時間は1以上を入力してください";
@@ -27,6 +34,8 @@ function calculate() {
     }else if (micCount > 5) { 
         totalDisplay.textContent = "マイクの数は5以下を入力してください";
         return;}
+
+    
 
   // 2. 計算する
   let total = (price * hours) + (micPrice);
