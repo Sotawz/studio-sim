@@ -9,7 +9,7 @@ header {
 }
 
 .character-1 {
-    width: 80px; /* キャラクター画像を小さくしてスペースを確保 */
+    width: 120px; /* キャラクター画像を小さくしてスペースを確保 */
     height: auto;
     position:static; /* 位置をリセット */
     margin: 10px auto;
@@ -21,8 +21,16 @@ header {
 
 /*  メインタイトルのサイズ調整 */
 header h1 {
-    font-size: 22px;  /* スマホの幅に合わせて少し小さく */
-    padding: 10px 0;
+    font-size: 40px; /* タイトルを大きくして目立たせる */
+    text-align: center;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+header p {
+    font-size: 18px; /* 説明文を読みやすくする */
+    text-align: center;
+    padding: 0 0 20px 0;
     text-align: center;
 }
 
@@ -34,8 +42,11 @@ header h1 {
 }
 
 #hours, #mic {
+    display:flex;
+    align-items: center;
     width: 100%;      /* 入力欄を横いっぱいに広げて押しやすくする */
     max-width: 200px; /* 広がりすぎないように制限 */
+
 }
 
 
