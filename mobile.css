@@ -1,0 +1,51 @@
+header {
+    flex-direction: column;
+    padding: 20px 0;
+    min-height:auto;
+}
+
+.sp-br {
+    display: inline; /* スマホでは改行を有効にする */
+}
+
+.character-1 {
+    width: 80px; /* キャラクター画像を小さくしてスペースを確保 */
+    height: auto;
+    position:static; /* 位置をリセット */
+    margin: 10px auto;
+}
+
+.character-2 {
+    display:none;
+}
+
+/*  メインタイトルのサイズ調整 */
+header h1 {
+    font-size: 22px;  /* スマホの幅に合わせて少し小さく */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*  シミュレーター部分（計算機）の調整 */
+.main-top {
+    flex-direction: column; /* 横並びを縦並びにする */
+    gap: 15px;
+    padding: 20px;
+}
+
+#hours, #mic {
+    width: 100%;      /* 入力欄を横いっぱいに広げて押しやすくする */
+    max-width: 200px; /* 広がりすぎないように制限 */
+}
+
+
+/* スタジオ紹介（画像と説明）の調整 */
+.studio-description, .studio-main-description {
+    font-size: 18px;  /* 文字をスマホ用の標準サイズに */
+    padding: 0 15px;
+    margin-left: 0;   /* 余計な余白をカット */
+}
+
+.foto {
+    width: 95%;       /* 画面からはみ出さないように調整 */
+}
