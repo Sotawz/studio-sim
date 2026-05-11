@@ -13,11 +13,16 @@ main{
 .sp-br{
     display:none;
 }
+
+
 header{
+    background-image:url(studio_cg06.png);
+    background-size: cover;
+    background-position: center;
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color: gray;
+
 }
 
 .header-text{
@@ -30,37 +35,59 @@ header{
 
 header h1{
     color: black;
-    padding: 20px 0 0 0;
+    padding: 25px;
+    background-color: gold;
+
 }
 header p{
     color: black;
-    padding: 5px 0 20px 0;
+    padding: 20px;
+    background-color: gold;
+}
+
+main{
+    background-image:url(27439484_s.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 
 .character-1{
-    display:flex;
-    justify-content:space-between;
-    width: 150px;
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width: 110px;
     height: auto;
-    position: relative;
-    left: -50px;
 }
-.character-2{
-    display:flex;
-    justify-content:space-between;
-    width: 150px;
-    height: auto;
-    position: relative;
-    right: -50px;
-}
+
 
 footer{
+    position: relative;
+    padding:40px 0;
+    overflow:hidden;
     background-color:black;
     color:white;
-    text-align: center;
-    padding: 20px 0;
 }
 
+.character-2{
+    position:absolute;
+    bottom: 0;
+    right:0;
+    width: 110px;
+    height: auto;
+}
+
+footer p{
+    display:flex;
+    justify-content:center;
+    font-size: 18px;
+    margin:0;
+}
 
 .gallery{
     display: flex;
@@ -113,7 +140,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:darkkhaki;
+    background-color:goldenrod;
+    padding: 50px 100px;
     gap: 20px;
     margin-bottom: 20px;
 }
