@@ -46,8 +46,7 @@ header p{
 }
 
 main{
-    background-image:url(27439484_s.jpg);
-    background-size: cover;
+    background-color:silver;
     background-position: center;
     display: flex;
     justify-content: center;
